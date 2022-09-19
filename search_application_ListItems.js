@@ -1,4 +1,10 @@
 function ListItems(props) {
+
+
+  if (props.isLoading) {
+    return <h1>Loading...</h1>;
+  }
+  
   return (
     <div>
       {props.listOfItems.map((photo) => {
