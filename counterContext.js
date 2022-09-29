@@ -1,8 +1,5 @@
-import React from 'react';
+import { createContext } from "react";
 
-const CounterContext = React.createContext();
+const counterContext = createContext();
 
-export const ContextProvider = CounterContext.Provider
-export const ContectConsumer = CounterContext.Consumer
-
-export default CounterContext;
+export default counterContext;
